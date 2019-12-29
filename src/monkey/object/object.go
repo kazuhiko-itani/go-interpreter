@@ -7,6 +7,8 @@ import (
 	"monkey/ast"
 )
 
+type BuiltinFunction func(args ...Object) Object
+
 type ObjectType string
 
 const (
@@ -78,7 +80,7 @@ func (f *Function) Inspect() string {
 	return out.String()
 }
 
-type Buildin struct {
+type Builtin struct {
 	Fn BuiltinFunction
 }
 
