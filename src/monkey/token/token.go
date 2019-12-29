@@ -38,6 +38,7 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
+	STRING   = "STRING"
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 	TRUE 		 = "TRUE"
